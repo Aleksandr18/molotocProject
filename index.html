@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?
+    family=Cardo:400i|
+    Open+Sans:700
+    Raleway:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google" content="notranslate">
+    <title>Molotoc</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- Sprite -->
+<svg style="display: none;">
+
+    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0"/>
+        </svg>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+      c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+      c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+      c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+      c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+      c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+      C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+      C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 512 512">
+        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+            <path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/>
+        </svg>
+
+    </symbol>
+
+
+</svg>
+
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__lgo">
+                <div class="nameLogo">Молоток</div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#features">Особенности</a>
+                <a class="nav__link" href="#" data-scroll="#work">Работа</a>
+                <a class="nav__link" href="#" data-scroll="#team">Наша команда</a>
+                <a class="nav__link" href="#" data-scroll="#reviwes">Отзывы</a>
+                <a class="nav__link" href="#" data-scroll="#download">Скачать</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Intro -->
+<div class="intro" id="intro">
+    <img class="fone" src="/img/bg.jpg" alt="">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Ваши любимые инструменты по низкой цене</h1>
+            <h2 class="intro__subtitle">Всем новым покупателям второй инструмент в подарок</h2>
+            <a class="btn btn--red" href="#">Узнать больше</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Features -->
+<div class="container" id="features">
+    <div class="features">
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+                богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+              богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+              богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+              богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+              богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/features/1.png">
+            <h4 class="features__title">Работа</h4>
+            <div class="features__text">Разнообразный и
+              богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.
+            </div>
+        </div>
+
+    </div> <!-- Features -->
+</div> <!-- container -->
+
+
+<!-- work -->
+<div class="work" id="work">
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+    <div class="work__item">
+        <img class="work__img" src="img/work/6.jpg">
+        <div class="work__content">
+            <div class="work__title">Название инструмента</div>
+            <div class="work__text">Назначение инструмента</div>
+        </div>
+    </div>
+
+</div><!-- Work -->
+
+
+<!-- Team -->
+
+<div class="team" id="team">
+    <div class="container">
+        <div class="team__inner">
+            <div class="team__item">
+                <img class="team__img" src="img/team/2.png">
+                <div class="team__name">Иван Иванов</div>
+                <div class="team__prof">Продавец консультант</div>
+                <div class="team__text"><p>Разнообразный и
+                  богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.</p></div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__img" src="img/team/2.png">
+                <div class="team__name">Иван Иванов</div>
+                <div class="team__prof">Продавец консультантА</div>
+                <div class="team__text"><p>Разнообразный и
+                  богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия..</p></div>
+            </div>
+
+
+            <div class="team__item">
+                <img class="team__img" src="img/team/2.png">
+                <div class="team__name">Иван Иванов</div>
+                <div class="team__prof">Продавец консультант</div>
+                <div class="team__text"><p>Разнообразный и
+                  богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия..</p></div>
+
+            </div>
+
+
+            <div class="team__item">
+                <img class="team__img" src="img/team/2.png">
+                <div class="team__name">Иван Иванов</div>
+                <div class="team__prof">Продавец консультант</div>
+                <div class="team__text"><p>Разнообразный и
+                  богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия.</p></div>
+
+        </div><!-- team__inner -->
+    </div><!-- container -->
+</div> <!-- team -->
+
+
+<!-- reviwes -->
+<div class="reviwes" id="reviwes">
+    <div class="container">
+        <div class="reviwes__slider" id="reviwesSlider">
+            <div>
+                <div class="reviwes__item">
+                    <div class="reviwes__img">
+                        <img class="rev__img" src="img/reviews/1.jpg">
+                    </div>
+                    <div class="reviwes__content">
+                        <div class="reviews__text">“Разнообразный и
+                          богатый опыт реализация намеченных плановых заданий требуют от нас анализа систем массового участия...”
+                        </div>
+                        <div class="reviews__author">Наталья Петрова, дизайнер</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="reviwes__item">
+                    <div class="reviwes__img">
+                        <img class="rev__img" src="img/reviews/1.jpg">
+                    </div>
+                    <div class="reviwes__content">
+                        <div class="reviews__text">“Разнообразный и
+                          богатый опыт...”
+                        </div>
+                        <div class="reviews__author">Наталья Петрова, дизайнер</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div><!-- container -->
+</div><!-- reviwes -->
+
+
+<!-- Download -->
+<div class="download" id="download">
+    <div class="container">
+        <h3 class="download__title">Готовы начать?</h3>
+        <a class="btn btn--red btn--long" href="#">Скачать здесь</a>
+    </div><!-- Container -->
+</div> <!-- Download -->
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__block">
+                <h4 class="footer__title">Место</h4>
+                <address class="footer__address">
+                    <p>Казань, Россия</p>
+                </address>
+            </div>
+
+
+            <div class="footer__block">
+                <h4 class="footer__title">Сделано с любовью</h4>
+                <div class="social social--footer ">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                    </a>
+                    </svg>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                    </a>
+                    </svg>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                    </a>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">О нас</h4>
+                <div class="footer__text">
+                    <p>Компания по продаже инструментов.</p>
+                </div>
+            </div>
+        </div> <!-- footer__inner -->
+    </div> <!-- container -->
+
+  <div class="copyright"> <!-- copyright -->
+
+    <div class="container">
+      <div class="copyright__text">
+        <div>© 2015 ООО Молоток.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
